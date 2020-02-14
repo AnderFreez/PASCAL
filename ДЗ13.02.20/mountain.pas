@@ -53,12 +53,12 @@ begin
     x += 1;
     y += 1;
   end;
-  for var i := 1 to 63 do
+  for var i := 1 to 32 do
   begin
     gotoxy(x , y);
-    write('*');
-    delay(50);
-    x -= 1;
+    write('* ');
+    delay(100);
+    x -= 2;
   end;
   readln;
 end.

@@ -8,10 +8,10 @@ begin
   for var i := 1 to 10 do
   begin
     gotoxy(x , y);
-    write('*');
+    write('* ');
     delay(100);
-    x += 1;
-    write('*');
+    x += 2;
+    write('* ');
     delay(100);
   end;
   x := 10;
@@ -19,10 +19,10 @@ begin
   for var i := 1 to 10 do
   begin
     gotoxy(x , y);
-    write('*');
+    write('* ');
     delay(100);
-    x+= 1;
-    write('*');
+    x+= 2;
+    write('* ');
     delay(100);
   end;
   x := 10;
@@ -33,10 +33,8 @@ begin
     write('*');
     delay(100);
     y+= 1;
-    write('*');
-    delay(100);
   end;
-  x := 20;
+  x := 30;
   y := 10;
   for var i := 1 to 10 do
   begin
@@ -44,8 +42,6 @@ begin
     write('*');
     delay(100);
     y+= 1;
-    write('*');
-    delay(100);
   end;
   readln;
 end.

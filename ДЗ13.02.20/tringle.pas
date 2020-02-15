@@ -21,12 +21,12 @@ begin
     x += 1;
     y += 1;
   end;
-  for var i := 1 to 23 do
+  for var i := 1 to 12 do
   begin
     gotoxy(x , y);
-    write('*');
+    write('* ');
     delay(100);
-    x -= 1;
+    x -= 2;
   end;
   readln;
 end.

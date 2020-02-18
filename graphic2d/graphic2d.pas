@@ -35,8 +35,7 @@ end;
 
 procedure line(p1, p2: point);
 begin
-  var tx, ty, space: integer;
-  space := 0;
+  var tx, ty: integer;
   if p1.x < p2.x then tx := 1;
   if p1.x > p2.x then tx := -1;
   if p1.x = p2.x then tx := 0;
@@ -45,7 +44,6 @@ begin
   if p1.y = p2.y then ty := 0;
   begin
     ty := 0;
-    space := 1;
   end;
   var l: integer := max(abs(p1.x - p2.x), abs(p1.y - p2.y)) + 1;
   for var i := 1 to l do
@@ -53,7 +51,7 @@ begin
     gotoxy(p1.x, p1.y);
     write('*');
     delay(100);
-    p1.x += tx + space;
+    p1.x += tx;
     p1.y += ty;
   end;
 end;
